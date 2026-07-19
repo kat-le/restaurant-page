@@ -1,4 +1,43 @@
-.heroImg {
-    height: 200px;
-    width: 200px;
+.home-content {
+  height: 100vh;
 }
+
+.hero-container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+}
+
+.right-col {
+    background-size: cover;
+    background-position: center;
+    background-image: url("./restaurant.jpg");
+}
+
+.left-col {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 32px;
+}
+
+.hero-card {
+  color: black;
+}
+
+.left-col h1 {
+  font-size: 6rem;
+  margin-bottom: -16px;
+}
+
+.hero-text {
+  padding: 100px 16px 0px 50%;
+}
+
+.call-to-action p {
+  padding: 0px 16px 80px 8px;
+}
+
