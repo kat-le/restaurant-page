@@ -6,6 +6,7 @@ body {
   box-sizing: border-box;
   min-height: 100vh;
   font-family: "Nanum Gothic", sans-serif;
+  background-color: rgb(255, 253, 239);
 }
 
 h1,
@@ -15,18 +16,17 @@ p {
 }
 
 header {
-  position: absolute;
   width: 100%;
   top: 0;
-  z-index: 10;
 }
 
 nav {
   display: flex;
   align-items: center;
-  padding: 16px 32px;
-  background: transparent;
+  padding: 8px 32px;
   justify-content: space-between;
+  height: 28px;
+  background-color: rgb(255, 234, 150);
 }
 
 nav h1 {
@@ -35,7 +35,7 @@ nav h1 {
   color: black;
   grid-column: 2;
   justify-self: center;
-  font-size: 2.3rem;
+  font-size: 1.9rem;
   font-family: "Ephesis", cursive;
 }
 
@@ -50,8 +50,13 @@ nav h1 {
   border: none;
   cursor: pointer;
   background-color: transparent;
-  color: rgb(255, 224, 84);
-  font-weight: 500;
-  font-size: 1.1rem;
+  color: black;
+  font-size: 0.8rem;
 }
 
+footer {
+  width: 100%;
+  bottom: 0;
+  height: 60px;
+  background-color: rgb(255, 234, 150);
+}

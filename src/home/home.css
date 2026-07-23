@@ -4,7 +4,7 @@
 
 .hero-container {
   width: 100%;
-  height: 100%;
+  height: calc(100% - 44px);
   display: grid;
   grid-template-columns: 1fr 1fr;
   position: relative;
@@ -20,8 +20,9 @@
   display: flex;
   height: 100%;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-end;
   padding-left: 32px;
+  position: relative;
 }
 
 .hero-card {
@@ -29,15 +30,31 @@
 }
 
 .left-col h1 {
-  font-size: 6rem;
+  font-size: 8rem;
+  font-weight: 700;
   margin-bottom: -16px;
+    color: rgb(255, 221, 1);
+
+  letter-spacing: -7px;
 }
 
-.hero-text {
-  padding: 100px 16px 0px 50%;
+.left-img {
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    background-image: url("./restaurant2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .call-to-action p {
   padding: 0px 16px 80px 8px;
 }
+
+
 
